@@ -1,10 +1,10 @@
 import React from 'react'; 
+import reservation_page from "../images/reservation_page.jpeg"; 
 
 function Reservations(){
     return(
         <div>
-            <h1>Welcome to Little Lemon!</h1>
-            <p>This is the Reservations page.</p>
+            <img src={reservation_page} alt="reservation for amazing food"/>
         </div>
     );
 }
