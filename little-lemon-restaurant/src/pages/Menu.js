@@ -1,12 +1,19 @@
 import React from 'react'; 
+import MealCard from '../components/MealCard';
+import mealsData from "../components/meals.json"; 
+import "./Menu.css";
 
-function Menu(){
-    return(
-        <div>
-            <h1>Welcome to Little Lemon!</h1>
-            <p>This is the Menu page.</p>
+const Menu = () => {
+    return (
+      <section className="menu">
+        <h2>Our Menu</h2>
+        <div className="menu-container">
+          {mealsData.meal_card.map((meal, index) => (
+            <MealCard key={index} meal={meal} />
+          ))}
         </div>
+      </section>
     );
-}
+  };
 
 export default Menu; 
