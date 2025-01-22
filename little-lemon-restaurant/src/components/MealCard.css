@@ -1,0 +1,115 @@
+/* General Meal Card Styling */
+.meal-card {
+    border: 1px solid #ddd; /* Light border for card */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure contents fit the card */
+    background-color: #fff; /* White background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 300px; /* Fixed width for consistency */
+    margin: 20px; /* Space between cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Add hover effect */
+  .meal-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  }
+  
+  /* Meal Card Image Section */
+  .meal-card-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+   /* border-radius: 8px;*/
+  }
+  
+  /* Header Section (Title and Price) */
+  .meal-card-header {
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between title and price */
+    align-items: center; /* Center items vertically */
+    padding: 15px; /* Padding for spacing */
+    border-bottom: 1px solid #ddd; /* Separator line */
+  }
+  
+  .meal-card-header h3 {
+    font-size: 1.5rem; /* Title font size */
+    color: #333; /* Dark text color */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .meal-card-header span {
+    font-size: 1.2rem; /* Price font size */
+    color: #495e57; /* Subtle greenish text color */
+    font-weight: bold;
+  }
+  
+  /* Body Section (Description and Footer) */
+  .meal-card-body-footer {
+    padding: 15px; /* Padding for spacing */
+    text-align: left; /* Left-align text */
+  }
+  
+  .meal-card-body-footer p {
+    font-size: 1rem; /* Normal font size for description */
+    color: #555; /* Medium gray for text */
+    line-height: 1.5; /* Improve readability */
+    margin-bottom: 15px; /* Space before footer link */
+  }
+  
+  /* Footer Link (Order Delivery) */
+  .meal-card-body-footer a {
+    display: inline-flex; /* Flex to align icon and text */
+    align-items: center; /* Vertically align items */
+    text-decoration: none; /* Remove underline */
+    color: #f4ce14; /* Accent yellow color */
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .meal-card-body-footer a:hover {
+    color: #e0ac10; /* Darker yellow on hover */
+  }
+  
+  /* Icon Styling */
+  .meal-card-body-footer svg {
+    margin-left: 8px; /* Space between text and icon */
+    font-size: 1.2rem; /* Adjust icon size */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .meal-card {
+      width: 100%; /* Full width on smaller screens */
+      margin: 10px 0; /* Reduce margin */
+    }
+  
+    .meal-card-header h3 {
+      font-size: 1.2rem; /* Smaller title font */
+    }
+  
+    .meal-card-header span {
+      font-size: 1rem; /* Smaller price font */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .meal-card {
+      width: 100%; /* Full width on smaller screens */
+      margin: 10px 0; /* Reduce margin */
+    }
+  
+    .meal-card-header h3 {
+      font-size: 1.2rem; /* Smaller title font */
+    }
+  
+    .meal-card-header span {
+      font-size: 1rem; /* Smaller price font */
+    }
+  
+    .meal-card-body-footer p {
+      font-size: 0.9rem; /* Smaller description text */
+    }
+  }

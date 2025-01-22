@@ -1,0 +1,22 @@
+{
+    "meal_card": [
+      {
+        "name": "Greek Salad",
+        "image": "/images/greekSaladImage.jpg",
+        "price": "$10.00",
+        "description": "The famous greek salad of crispy lettuce, peppers, olives, and our Chicago style feta cheese, garnished with lemon zest."
+      },
+      {
+        "name": "Bruschetta",
+        "image": "/images/bruschettaImage.jpg",
+        "price": "$6.79",
+        "description": "Our bruschetta is made from toasted garlic bread drizzled with olive oil and parmesean cheese on top."
+      },
+      {
+        "name": "Lemon Dessert",
+        "image": "/images/lemonDessertImage.jpeg",
+        "price": "$8.50",
+        "description": "This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined."
+      }
+    ]
+  }
