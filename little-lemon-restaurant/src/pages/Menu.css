@@ -8,6 +8,8 @@
   .menu h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    padding: 20px 0; /* Add padding to create more space */
+
   }
   
   .menu-container {

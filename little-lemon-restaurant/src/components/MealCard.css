@@ -18,10 +18,10 @@
   
   /* Meal Card Image Section */
   .meal-card-image img {
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
-    border-radius: 8px;
+   /* border-radius: 8px;*/
   }
   
   /* Header Section (Title and Price) */
@@ -92,5 +92,24 @@
   
     .meal-card-header span {
       font-size: 1rem; /* Smaller price font */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .meal-card {
+      width: 100%; /* Full width on smaller screens */
+      margin: 10px 0; /* Reduce margin */
+    }
+  
+    .meal-card-header h3 {
+      font-size: 1.2rem; /* Smaller title font */
+    }
+  
+    .meal-card-header span {
+      font-size: 1rem; /* Smaller price font */
+    }
+  
+    .meal-card-body-footer p {
+      font-size: 0.9rem; /* Smaller description text */
     }
   }
